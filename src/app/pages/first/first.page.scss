@@ -1,0 +1,55 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ion-content {
+    --background: url("../../../assets/first.jpg") no-repeat center fixed;
+}
+
+
+#login {
+    --background: white;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    width: 167px;
+    height: 52px;
+    --border-radius: 7px;
+    border: 2px solid #000000 !important;
+    border-radius: 9px;
+    font-weight: 700;
+    display: table;
+    margin: 0 auto;
+}
+
+
+#register {
+    --background: black;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    width: 167px;
+    height: 52px;
+    --border-radius: 7px;
+    border: 2px solid #000000 !important;
+    border-radius: 9px;
+    font-weight: 700;
+    display: table;
+    margin: 0 auto;
+}
+
+div.footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;//what a need to make use of ion-col ion-row
+    height: 100px;
+    background-color: white;
+}
+.footer-grid {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 25%;
+}
