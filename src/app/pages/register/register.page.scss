@@ -1,0 +1,36 @@
+#register{
+    width: 148px;
+    height: 40px;
+    margin-left: 20px;
+    margin-top: 50px;
+    font-family: Comfortaa;
+    font-size: 35px;
+}
+.field{
+    color: black;
+    border: 2px solid #000000;
+    width: 90%;
+    height: 52px;
+    margin: 20px  auto;
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    --padding-start:10px ;
+}
+#signup{
+    --background: black;
+    color: white;
+    --border-radius: 7px;
+    border-radius: 9px;
+    border: 2px solid #000000 !important;
+    width: 90%;
+    height: 52px;
+    margin: 20px  auto;
+    margin-top: 20px;
+    font-size: 15px;
+    display: table;
+    margin: 0 auto;
+}
+#container{
+    margin-top: 50px;
+}
