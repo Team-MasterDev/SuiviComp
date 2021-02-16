@@ -1,9 +1,43 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <div id="welcome-section">
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <h2 id="welcome">Welcome back!</h2>
+    </ion-row>
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <p id="signin-par">Sign in to continue</p>
+    </ion-row>
+  </div>
+  <!--Form UI -->
+  <div id="form-section">
+  <ion-row>
+    <ion-col>
+        <ion-input id="email" type="email" inputmode="email" placeholder="Email"></ion-input>
+    </ion-col>
+  </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-input id="password" type="password" placeholder="Password"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-align-self-end">
+      <ion-col class="ion-align-self-end">
+        <ion-button [routerLink]="['/tabs']" id="forget" fill="clear"> <span>Forgot your password?</span></ion-button>
+      </ion-col>
+    </ion-row>
 
+    <ion-row>
+      <ion-col>
+        <ion-button id="login" href="tabs">Log in</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+  <ion-row id="register-row">
+    <ion-col>
+      <p id="register">Register Now</p>
+    </ion-col>
+  </ion-row>
+  <ion-row>
+
+  </ion-row>
 </ion-content>
