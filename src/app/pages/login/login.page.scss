@@ -1,0 +1,90 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+div#welcome-section {
+  margin-top: 100px;
+  font-family: 'Flamenco', cursive;
+}
+
+#welcome {
+  font-weight: 600;
+  font-size: 45px;
+}
+#signin-par {
+  margin-top: 15px;
+  font-size: 22px;
+}
+
+#form-section {
+  margin-top: 70px;
+  font-family: 'Roboto', sans-serif;
+}
+
+#email {
+  height: 52px;
+  width: 90%;
+  margin: 10px auto;
+  border: 2px solid #000000;
+  --padding-start:10px;
+  font-size: 17px;
+
+}
+
+#password {
+  height: 52px;
+  width: 90%;
+  margin:10px auto;
+  border: 2px solid #000000;
+  --padding-start:10px;
+  font-size: 17px;
+}
+
+#forget {
+  font-size: 12px;
+  width: 90%;
+  margin:5px auto;
+  display: table;
+  text-align: right !important;
+}
+
+#forget{
+  span{
+    text-align:right;
+    width:100%;
+    text-transform: initial;
+    color: #000000;
+  }
+}
+
+#login {
+  height: 52px;
+  width: 90%;
+  display: table;
+  margin:20px auto;
+  --background: black;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  --border-radius: 7px;
+  border: 2px solid #000000 !important;
+  border-radius: 9px;
+  font-weight: 700;
+}
+
+
+#register {
+  font-size: 14px;
+  display: table;
+  ont-family: 'Roboto', sans-serif;
+  margin:5px auto;
+  text-align: right;
+  text-decoration: underline;
+}
+
+#register-row{
+  width: 100%;
+  position: fixed;
+  bottom: 40px;
+}
