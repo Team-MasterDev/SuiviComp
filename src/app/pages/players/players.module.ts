@@ -5,7 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { PlayersPageRoutingModule } from './players-routing.module';
-import { TitleComponent } from '../../components/title/title.component';
+import { HeaderComponent } from '../../components/header/header.component';//first the import of the componet
 
 import { PlayersPage } from './players.page';
 
@@ -18,7 +18,7 @@ import { PlayersPage } from './players.page';
   ],
   declarations: [
     PlayersPage,
-    TitleComponent// it's necessaray to declaire the new component in your main component
+    HeaderComponent// it's necessaray to declaire the new component in your main component
   ]
 })
 export class PlayersPageModule {}
