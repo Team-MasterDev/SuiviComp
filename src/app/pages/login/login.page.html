@@ -21,7 +21,7 @@
     </ion-row>
     <ion-row class="ion-align-self-end">
       <ion-col class="ion-align-self-end">
-        <ion-button [routerLink]="['/tabs']" id="forget" fill="clear"> <span>Forgot your password?</span></ion-button>
+        <a [routerLink]="['/tabs']" id="forget" fill="clear"> <span>Forgot your password?</span></a>
       </ion-col>
     </ion-row>
 
@@ -34,10 +34,7 @@
 
   <ion-row id="register-row">
     <ion-col>
-      <p id="register">Register Now</p>
+      <a [routerLink]="['/register']" id="register" fill="clear"> Register Now</a>
     </ion-col>
-  </ion-row>
-  <ion-row>
-
   </ion-row>
 </ion-content>

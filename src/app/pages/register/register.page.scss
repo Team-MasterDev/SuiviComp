@@ -34,3 +34,21 @@
 #container{
     margin-top: 50px;
 }
+
+#login {
+  font-size: 14px;
+  display: table;
+  ont-family: 'Roboto', sans-serif;
+  margin:5px auto;
+  text-align: right;
+  text-decoration: underline;
+  padding: 10px;
+  color: #000000;
+}
+
+#login-row{
+  width: 100%;
+  position: fixed;
+  padding-left: 10px;
+  bottom: 40px;
+}

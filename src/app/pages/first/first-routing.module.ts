@@ -9,13 +9,12 @@ const routes: Routes = [
     component: FirstPage
   },
   {
-<<<<<<< HEAD
     path: 'register',
     loadChildren: () => import('../register/register.module').then(m => m.RegisterPageModule)
-=======
+   },
+  {
     path: 'login',
     loadChildren: () => import('../login/login.module').then(m => m.LoginPageModule)
->>>>>>> e8b66cf48f1e49e33eaa6c7a5bce43377679a1af
   }
 ];
 
