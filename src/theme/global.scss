@@ -1,16 +1,16 @@
 .my-submit-bt{
-  --background: white;
+  background: #1F53E4;
   font-size: 15px;
   font-family: 'Roboto', sans-serif;
-  color: black;
-  width: 167px;
+  color: white;
+  width: 200px;
   height: 52px;
   --border-radius: 7px;
-  border: 2px solid white !important;
-  border-radius: 9px;
+  //border: 2px solid white !important;
+  border-radius: 6px;
   font-weight: 700;
   display: table;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 ion-input{
@@ -18,5 +18,12 @@ ion-input{
   --placeholder-font-style: var(--my-font-family);
   --placeholder-font-weight: 500;
   font-size: 15px;
-  --background: white;
+}
+
+//error class
+.error {
+  font-size: 13px;
+  font-family: var(--my-font-family);
+  margin-left: 10px;
+  color: red;
 }

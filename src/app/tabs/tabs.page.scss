@@ -1,5 +1,12 @@
 ion-tab-button {
-  --color-selected: #E40045;
+  --color: black;
+  --color-selected: #0001FC;
+}
+
+ion-tab-bar {
+  --background: #EFF5FB;
+  --border: none;
+  height: 60px;
 }
 
 ion-label {

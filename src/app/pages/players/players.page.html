@@ -13,7 +13,7 @@
             Player ID should be min 3 chars long.
           </span>
           <!-- Badge ID -->
-          <ion-input class="" type="text" formControlName="badgeId" placeholder="Badge ID"></ion-input>
+          <ion-input class="" type="text" formControlName="badgeId" placeholder="Badge ID ( example ABC-123 )"></ion-input>
           <!-- Error messages -->
           <span class="error ion-padding" *ngIf="isSubmitted && errorControl.playerId.errors?.required">
             Badge ID is required.
