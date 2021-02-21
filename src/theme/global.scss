@@ -1,0 +1,22 @@
+.my-submit-bt{
+  --background: white;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+  width: 167px;
+  height: 52px;
+  --border-radius: 7px;
+  border: 2px solid white !important;
+  border-radius: 9px;
+  font-weight: 700;
+  display: table;
+  margin: 0 auto;
+}
+
+ion-input{
+  --padding-start:10px;
+  --placeholder-font-style: var(--my-font-family);
+  --placeholder-font-weight: 500;
+  font-size: 15px;
+  --background: white;
+}

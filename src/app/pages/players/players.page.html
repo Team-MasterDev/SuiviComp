@@ -1,4 +1,28 @@
 <app-header [title] = "title"></app-header>
 <ion-content>
-
+  <div class="container">
+    <div id="player-form">
+      <form [formGroup]="myform" (ngSubmit)="logForm()">
+          <!-- Player ID -->
+          <ion-input class="" type="text" formControlName="playerId" placeholder="Player ID"></ion-input>
+          <!-- Error messages -->
+          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.playerId.errors?.required">
+            Player ID is required.
+          </span>
+            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.playerId.errors?.minlength">
+            Player ID should be min 3 chars long.
+          </span>
+          <!-- Badge ID -->
+          <ion-input class="" type="text" formControlName="badgeId" placeholder="Badge ID"></ion-input>
+          <!-- Error messages -->
+          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.playerId.errors?.required">
+            Badge ID is required.
+          </span>
+          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.playerId.errors?.minlength">
+            Badge ID should be min 2 chars long.
+          </span>
+          <button ion-button type="submit" class="my-submit-bt">Submit</button>
+      </form>
+    </div>
+  </div>
 </ion-content>
