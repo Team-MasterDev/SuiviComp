@@ -1,0 +1,52 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+//move all content with margin top
+#container {
+  margin-top: 60px;
+}
+
+.profil-title {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: var(--my-font-family);
+  color: var(--my-black-color);
+  margin: 0px;
+
+}
+
+.first-row {
+  width: 90%;
+  margin: 0px auto;
+
+}
+
+.change-col{
+  align-items: end;
+}
+.change {
+  width: 100%;
+  position: absolute;
+  text-align: right;
+  right: 20px;
+  padding: 7px 10px 10px 10px;
+  color: var(--my-gruy-color);
+  font-size: 14px;
+}
+
+.second-row{
+  width: 90%;
+  margin: 5px auto;
+  font-size: 16px;
+  color: var(--my-blue-color);
+  font-weight: 500;
+}
+
+//Make margin between divs
+
+#name, #email, #phone, #password, #accountType {
+  margin-top: 23px;
+}
+

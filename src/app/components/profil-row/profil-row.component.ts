@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-profil-row',
@@ -7,8 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProfilRowComponent implements OnInit {
 
+  @Input() label;
+  @Input() value;
+  @Input() changePath;
+
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() {
+
+    console.log();
+  }
+
 
 }
