@@ -1,0 +1,35 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.profil-title {
+  font-size: 19px;
+  font-weight: 500;
+  font-family: var(--my-font-family);
+  color: var(--my-black-color);
+  margin: 0px;
+
+}
+
+.first-row {
+  width: 90%;
+  margin: 0px auto;
+
+}
+
+.change-col{
+  align-items: end;
+}
+.change {
+  width: 100%;
+  position: absolute;
+  text-align: right;
+  right: 20px;
+  padding: 7px 10px 10px 10px;
+}
+
+.second-row{
+  width: 90%;
+  margin: 7px auto;
+}
