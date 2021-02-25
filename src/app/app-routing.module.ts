@@ -32,6 +32,14 @@ const routes: Routes = [
   {
     path: 'explore',
     loadChildren: () => import('./pages/explore/explore.module').then( m => m.ExplorePageModule)
+  },
+  {
+    path: 'running',
+    loadChildren: () => import('./pages/running/running.module').then( m => m.RunningPageModule)
+  },
+  {
+    path: 'swimming',
+    loadChildren: () => import('./pages/swimming/swimming.module').then( m => m.SwimmingPageModule)
   }
 
 

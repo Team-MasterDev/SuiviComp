@@ -17,7 +17,20 @@ const routes: Routes = [
       },
       {
         path: 'home',
-        loadChildren: () => import('../pages/home/home.module').then(m => m.HomePageModule)
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/home/home.module').then(m => m.HomePageModule)
+          },
+          {// To navigate to nested Components take a look in the ionic documentation.
+            path: 'running',
+            loadChildren: () => import('../pages/running/running.module').then(m => m.RunningPageModule)
+          },
+          {// To navigate to nested Components take a look in the ionic documentation.
+            path: 'swimming',
+            loadChildren: () => import('../pages/swimming/swimming.module').then(m => m.SwimmingPageModule)
+          }
+        ]
       },
       {
         path: 'players',
