@@ -38,7 +38,18 @@ const routes: Routes = [
       },
       {
         path: 'profile',
-        loadChildren: () => import('../pages/profile/profile.module').then(m => m.ProfilePageModule)
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/profile/profile.module').then(m => m.ProfilePageModule)
+          },
+          {
+            path: 'changepassword',
+            loadChildren: () => import('../pages/changepassword/changepassword.module').then( m => m.ChangepasswordPageModule)
+          }
+
+        ]
+
       },
       {
         path: '',

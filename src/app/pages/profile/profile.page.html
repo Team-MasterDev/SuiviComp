@@ -53,7 +53,7 @@
           <h3 class="profil-title">Password</h3>
         </ion-col>
         <ion-col class="change-col" size="4">
-          <a  fill="clear" class="change"> Change</a>
+          <a [routerLink]="['changepassword']" fill="clear" class="change" > Change</a>
         </ion-col>
       </ion-row>
       <ion-row class="second-row">
@@ -76,6 +76,13 @@
       </ion-row>
     </div>
     <!-- Account type -->
+    <!-- logout -->
+    <div id="logout">
+      <ion-row class="first-row">
+          <a  fill="clear" id="logout-id"> Logout <ion-icon name="log-out-outline" id="logout-icon"></ion-icon> </a>
+      </ion-row>
+
+    </div>
   </div>
 </ion-content>
 
