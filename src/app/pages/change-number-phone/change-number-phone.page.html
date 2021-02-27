@@ -1,9 +1,27 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>changeNumberPhone</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<app-header [title] = "title"></app-header>
 <ion-content>
-
+  <div class="container">
+    <div class="form-container">
+      <ion-row class="first-row">
+        <p class="profil-title">Actual phone number</p>
+      </ion-row>
+      <ion-row class="second-row ion-padding-bottom">
+        <p>+33 6 16 39 54 78</p>
+      </ion-row>
+      <form [formGroup]="myform" (ngSubmit)="logForm()">
+        <!-- Email -->
+        <ion-input class="my-input-class" type="text" formControlName="phone" placeholder="New phone number"></ion-input>
+        <!-- Error messages -->
+        <ion-row>
+        <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.phone.errors?.required">
+            Phone number is required.
+        </span>
+          <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.phone.errors?.minlength">
+            Phone number should be min 3 chars long.
+        </span>
+        </ion-row>
+        <button ion-button type="submit" class="confirm-changes">Confirm modification</button>
+      </form>
+    </div>
+  </div>
 </ion-content>

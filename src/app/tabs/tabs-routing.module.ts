@@ -55,6 +55,11 @@ const routes: Routes = [
             path: 'changename',
             loadChildren: () => import('../pages/changename/changename.module').then( m => m.ChangenamePageModule)
           }
+          ,
+          {
+            path: 'changeph_number',
+            loadChildren: () => import('../pages/change-number-phone/change-number-phone.module').then( m => m.ChangeNumberPhonePageModule)
+          }
 
         ]
 
