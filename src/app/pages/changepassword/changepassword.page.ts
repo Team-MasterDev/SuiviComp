@@ -29,7 +29,7 @@ export class ChangepasswordPage implements OnInit {
   logForm(){
     this.isSubmitted = true;
     console.log(this.myform.value);
-    console.log(this.errorControl.playerId.errors?.required);
+    console.log(this.errorControl.email.errors?.required);
   }
 
   ngOnInit() {
