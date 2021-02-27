@@ -1,9 +1,27 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>changename</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<app-header [title] = "title"></app-header>
 <ion-content>
-
+  <div class="container">
+    <div class="form-container">
+      <ion-row class="first-row">
+        <p class="profil-title">Actual User name</p>
+      </ion-row>
+      <ion-row class="second-row ion-padding-bottom">
+        <p>James Warden</p>
+      </ion-row>
+      <form [formGroup]="myform" (ngSubmit)="logForm()">
+        <!-- Email -->
+        <ion-input class="my-input-class" type="text" formControlName="username" placeholder="New user name"></ion-input>
+        <!-- Error messages -->
+        <ion-row>
+        <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.username.errors?.required">
+            Email is required.
+        </span>
+          <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.username.errors?.minlength">
+            Email should be min 3 chars long.
+        </span>
+        </ion-row>
+        <button ion-button type="submit" class="confirm-changes">Confirm modification</button>
+      </form>
+    </div>
+  </div>
 </ion-content>
