@@ -11,17 +11,15 @@ ion-title{
   color: red;
 }
 
-.input-text {
 
-}
-
-ion-input{
+ion-input.my-input-class{
   height: 52px;
   width: 90%;
   margin: 10px auto;
   border: 2px solid #A7A9BE;
-  font-size: 17px;
+  font-size: 1.1rem;
   --placeholder-color: #A7A9BE;
+  color: var(--my-input-text-color);
 }
 
 ion-item {
@@ -31,8 +29,8 @@ ion-item {
   --border-color: white;
 }
 
-#player-form{
-  padding-top: 70px;
+.form-container{
+  margin-top: 45px;
 }
 
 .my-submit-bt{
@@ -49,6 +47,7 @@ ion-item {
   display: table;
   margin: 30px auto;
 }
+
 
 ion-input{
   --padding-start:10px;

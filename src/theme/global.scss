@@ -1,29 +1,34 @@
-.my-submit-bt{
-  background: #1F53E4;
-  font-size: 17px;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  width: 200px;
-  height: 52px;
-  --border-radius: 7px;
-  //border: 2px solid white !important;
-  border-radius: 6px;
+//*****************style for profile ***************************//
+
+.profil-title {
+  font-size: 19px;
   font-weight: 500;
-  display: table;
-  margin: 30px auto;
-}
-
-ion-input{
-  --padding-start:10px;
-  --placeholder-font-style: var(--my-font-family);
-  --placeholder-font-weight: 500;
-  font-size: 15px;
-}
-
-//error class
-.error {
-  font-size: 13px;
   font-family: var(--my-font-family);
-  margin-left: 10px;
-  color: red;
+  color: var(--my-black-color);
+  margin: 0px;
+
 }
+
+.first-row {
+  width: 90%;
+  margin: 0px auto;
+
+}
+
+.second-row{
+  width: 90%;
+  margin: 5px auto;
+  font-size: 16px;
+  color: var(--my-blue-color);
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+////////////////////////////////////////
+
+

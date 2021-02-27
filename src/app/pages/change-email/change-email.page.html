@@ -1,9 +1,44 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>changeEmail</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<app-header [title] = "title"></app-header>
 <ion-content>
-
+  <div class="container">
+    <div class="form-container">
+      <ion-row class="first-row">
+        <p class="profil-title">Actual email adress</p>
+      </ion-row>
+      <ion-row class="second-row ion-padding-bottom">
+        <p>j-warden@email.com</p>
+      </ion-row>
+      <form [formGroup]="myform" (ngSubmit)="logForm()">
+        <!-- Email -->
+        <ion-input class="my-input-class" type="text" formControlName="email" placeholder="New email"></ion-input>
+        <!-- Error messages -->
+        <ion-row>
+        <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.email.errors?.required">
+            Email is required.
+        </span>
+        <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.email.errors?.minlength">
+            Email should be min 3 chars long.
+        </span>
+        <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.email.errors?.email">
+            You should enter a valid email.
+        </span>
+        </ion-row>
+        <!-- Confirm email ID -->
+        <ion-input class="my-input-class" type="text" formControlName="emailCheck" placeholder="Confirm email"></ion-input>
+        <!-- Error messages -->
+        <ion-row>
+        <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.emailCheck.errors?.required">
+            Confirm email is required.
+        </span>
+        <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.emailCheck.errors?.minlength">
+            Email should be min 2 chars long.
+        </span>
+        <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.emailCheck.errors?.email">
+            You should enter a valid email.
+        </span>
+        </ion-row>
+        <button ion-button type="submit" class="confirm-changes">Confirm modification</button>
+      </form>
+    </div>
+  </div>
 </ion-content>
