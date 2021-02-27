@@ -14,8 +14,8 @@ export class ChangepasswordPage implements OnInit {
   private myform: FormGroup;
   constructor(private formBuilder: FormBuilder) {
     this.myform = this.formBuilder.group({
-      email: ['', [Validators.required,  Validators.minLength(3)]],
-      emailCheck: ['', [Validators.required, Validators.minLength(7)]]
+      password: ['', [Validators.required,  Validators.minLength(3)]],
+      passwordCheck: ['', [Validators.required, Validators.minLength(7)]]
     });
 
   }
@@ -29,7 +29,7 @@ export class ChangepasswordPage implements OnInit {
   logForm(){
     this.isSubmitted = true;
     console.log(this.myform.value);
-    console.log(this.errorControl.email.errors?.required);
+    console.log(this.errorControl.password.errors?.required);
   }
 
   ngOnInit() {

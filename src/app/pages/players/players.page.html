@@ -4,21 +4,21 @@
     <div id="player-form">
       <form [formGroup]="myform" (ngSubmit)="logForm()">
           <!-- Player ID -->
-          <ion-input class="" type="text" formControlName="playerId" placeholder="Player ID"></ion-input>
+          <ion-input class="my-input-class" type="text" formControlName="playerId" placeholder="Player ID"></ion-input>
           <!-- Error messages -->
-          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.playerId.errors?.required">
+          <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.playerId.errors?.required">
             Player ID is required.
           </span>
-            <span class="error ion-padding" *ngIf="isSubmitted && errorControl.playerId.errors?.minlength">
+            <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.playerId.errors?.minlength">
             Player ID should be min 3 chars long.
           </span>
           <!-- Badge ID -->
-          <ion-input class="" type="text" formControlName="badgeId" placeholder="Badge ID ( example ABC-123 )"></ion-input>
+          <ion-input class="my-input-class" type="text" formControlName="badgeId" placeholder="Badge ID ( example ABC-123 )"></ion-input>
           <!-- Error messages -->
-          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.playerId.errors?.required">
+          <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.playerId.errors?.required">
             Badge ID is required.
           </span>
-          <span class="error ion-padding" *ngIf="isSubmitted && errorControl.playerId.errors?.minlength">
+          <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.playerId.errors?.minlength">
             Badge ID should be min 2 chars long.
           </span>
           <button ion-button type="submit" class="my-submit-bt">Add </button>
