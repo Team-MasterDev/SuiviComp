@@ -9,13 +9,17 @@ import { ExplorePageRoutingModule } from './explore-routing.module';
 import { ExplorePage } from './explore.page';
 import {SharedModule} from '../../sharedModule/shared.module';
 
+import { HttpClientModule } from '@angular/common/http';
+
+
 @NgModule({
     imports: [
         CommonModule,
         FormsModule,
         IonicModule,
         ExplorePageRoutingModule,
-        SharedModule
+        SharedModule,
+        HttpClientModule
     ],
   declarations: [ExplorePage]
 })
