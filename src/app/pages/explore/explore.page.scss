@@ -1,0 +1,28 @@
+ion-card-content {
+  padding-bottom: 0px;
+}
+.my-card {
+  --background: #EEF7FE;
+  font-family: var(--my-second-font-family);
+  border-radius: 26px;
+
+}
+ion-card-title.my-card-title {
+  font-family: var(--my-second-font-family);
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #22215B;
+}
+
+p.my-card-dis{
+  font-size: 0.8em;
+}
+
+.data-style {
+  background-color: white;
+  width: 100%;
+  color: #22215B;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 0.8em;
+}
