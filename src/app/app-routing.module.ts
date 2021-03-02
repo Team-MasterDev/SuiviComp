@@ -13,7 +13,8 @@ const routes: Routes = [
   {
     path: 'register',
     loadChildren: () => import('./pages/register/register.module').then( m => m.RegisterPageModule)
-  },  {
+  },
+  {
     path: 'home',
     loadChildren: () => import('./pages/home/home.module').then( m => m.HomePageModule)
   },
@@ -40,6 +41,26 @@ const routes: Routes = [
   {
     path: 'swimming',
     loadChildren: () => import('./pages/swimming/swimming.module').then( m => m.SwimmingPageModule)
+  },
+  {
+    path: 'changepassword',
+    loadChildren: () => import('./pages/changepassword/changepassword.module').then( m => m.ChangepasswordPageModule)
+  },
+  {
+    path: 'changename',
+    loadChildren: () => import('./pages/changename/changename.module').then( m => m.ChangenamePageModule)
+  },
+  {
+    path: 'change-number-phone',
+    loadChildren: () => import('./pages/change-number-phone/change-number-phone.module').then( m => m.ChangeNumberPhonePageModule)
+  },
+  {
+    path: 'change-account-type',
+    loadChildren: () => import('./pages/change-account-type/change-account-type.module').then( m => m.ChangeAccountTypePageModule)
+  },
+  {
+    path: 'change-email',
+    loadChildren: () => import('./pages/change-email/change-email.module').then( m => m.ChangeEmailPageModule)
   }
 
 

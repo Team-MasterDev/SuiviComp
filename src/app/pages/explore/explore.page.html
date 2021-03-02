@@ -1,9 +1,18 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>explore</ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<app-header [title] = "title"></app-header>
 <ion-content>
-
+  <ion-card class="my-card" *ngFor="let course of courses">
+    <ion-card-header>
+      <ion-card-title class="my-card-title">{{course.title}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-row>
+        <p class="my-card-dis">{{course.description}}</p>
+      </ion-row>
+      <ion-row style="text-align: right;">
+        <ion-col offset="8">
+          <p class="data-style">{{course.created_at}}</p>
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+  </ion-card>
 </ion-content>

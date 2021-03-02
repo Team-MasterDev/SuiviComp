@@ -5,9 +5,10 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { PlayersPageRoutingModule } from './players-routing.module';
-import { HeaderComponent } from '../../components/header/header.component';//first the import of the componet
 
+//first the import of the componet
 import { PlayersPage } from './players.page';
+import {SharedModule} from '../../sharedModule/shared.module';
 
 
 @NgModule({
@@ -16,11 +17,11 @@ import { PlayersPage } from './players.page';
     FormsModule,
     IonicModule,
     PlayersPageRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule// it's necessaray to declaire the new component in your main component by a shared component
   ],
   declarations: [
-    PlayersPage,
-    HeaderComponent// it's necessaray to declaire the new component in your main component
+    PlayersPage
   ]
 })
 export class PlayersPageModule {}

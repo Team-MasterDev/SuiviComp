@@ -7,20 +7,19 @@ import { IonicModule } from '@ionic/angular';
 import { ProfilePageRoutingModule } from './profile-routing.module';
 
 import { ProfilePage } from './profile.page';
-import { HeaderComponent } from '../../components/header/header.component';
-import { ProfilRowComponent } from '../../components/profil-row/profil-row.component';
+import {SharedModule} from '../../sharedModule/shared.module';
+
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    ProfilePageRoutingModule
+    ProfilePageRoutingModule,
+    SharedModule
   ],
   declarations: [
-    ProfilePage,
-    HeaderComponent,
-    ProfilRowComponent
+    ProfilePage
   ]
 })
 export class ProfilePageModule {

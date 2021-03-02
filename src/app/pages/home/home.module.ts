@@ -7,19 +7,19 @@ import { IonicModule } from '@ionic/angular';
 import { HomePageRoutingModule } from './home-routing.module';
 
 import { HomePage } from './home.page';
-
-import { HeaderComponent } from '../../components/header/header.component';
+// this component used to delete Component is part of the declarations of 2 modules in Angular error
+import {SharedModule} from '../../sharedModule/shared.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    HomePageRoutingModule
+    HomePageRoutingModule,
+    SharedModule
   ],
-  declarations: [
-    HomePage,
-    HeaderComponent
-  ]
+    declarations: [
+        HomePage
+    ]
 })
 export class HomePageModule {}

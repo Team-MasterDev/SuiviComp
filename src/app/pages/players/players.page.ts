@@ -4,7 +4,7 @@ import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-players',
   templateUrl: './players.page.html',
-  styleUrls: ['./players.page.scss', '../../../theme/global.scss'],
+  styleUrls: ['./players.page.scss', '../../../theme/forms-style.scss'],
 })
 export class PlayersPage implements OnInit {
   title = 'Players';

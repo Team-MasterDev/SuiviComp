@@ -38,7 +38,31 @@ const routes: Routes = [
       },
       {
         path: 'profile',
-        loadChildren: () => import('../pages/profile/profile.module').then(m => m.ProfilePageModule)
+        children: [
+          {
+            path: '',
+            loadChildren: () => import('../pages/profile/profile.module').then(m => m.ProfilePageModule)
+          },
+          {
+            path: 'changepassword',
+            loadChildren: () => import('../pages/changepassword/changepassword.module').then( m => m.ChangepasswordPageModule)
+          },
+          {
+            path: 'changeemail',
+            loadChildren: () => import('../pages/change-email/change-email.module').then( m => m.ChangeEmailPageModule)
+          },
+          {
+            path: 'changename',
+            loadChildren: () => import('../pages/changename/changename.module').then( m => m.ChangenamePageModule)
+          }
+          ,
+          {
+            path: 'changeph_number',
+            loadChildren: () => import('../pages/change-number-phone/change-number-phone.module').then( m => m.ChangeNumberPhonePageModule)
+          }
+
+        ]
+
       },
       {
         path: '',
