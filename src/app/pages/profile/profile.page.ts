@@ -8,14 +8,11 @@ import {Router} from '@angular/router';
 export class ProfilePage implements OnInit {
 
   title = 'Account';
-<<<<<<< HEAD
 
   label = 'User name';
   value = 'James Warden';
   change = 'tabs';
 
-=======
->>>>>>> 2e51579333d271bc8f0423ce052cb6ef3fb878df
   constructor() { }
 
   ngOnInit() {
