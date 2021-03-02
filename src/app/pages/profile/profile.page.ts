@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
+import {AuthenticationService} from '../../services/authentication.service';
+
 @Component({
   selector: 'app-profile',
   templateUrl: './profile.page.html',
@@ -13,13 +15,18 @@ export class ProfilePage implements OnInit {
   value = 'James Warden';
   change = 'tabs';
 
-  constructor() { }
+  constructor(private authService: AuthenticationService, private router: Router) { }
 
   ngOnInit() {
   }
 
   log(){
     console.log('momo');
+  }
+
+  async logout() {
+    await this.authService.logout();
+    await this.router.navigateByUrl('/', {replaceUrl: true});
   }
 
 
