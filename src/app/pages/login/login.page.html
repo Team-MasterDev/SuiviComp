@@ -1,40 +1,45 @@
-<ion-header>
-  <ion-toolbar color="primary">
-    <ion-title>Devdactic App</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <div id="welcome-section">
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <h2 id="welcome">Welcome back!</h2>
+    </ion-row>
+    <ion-row class="ion-align-items-center ion-justify-content-center">
+      <p id="signin-par">Sign in to continue</p>
+    </ion-row>
+  </div>
   <form (ngSubmit)="login()" [formGroup]="credentials">
-    <div class="input-group">
       <ion-item>
-        <ion-input type="email" placeholder="Email" formControlName="email"></ion-input>
+        <ion-input class="my-input-class" type="email" placeholder="Email" formControlName="email"></ion-input>
       </ion-item>
       <div *ngIf="(email.dirty || email.touched) && email.errors" class="errors">
         <span *ngIf="email.errors?.required">Email is required</span>
         <span *ngIf="email.errors?.email">Email is invalid</span>
       </div>
       <ion-item>
-        <ion-input type="password" placeholder="Password" formControlName="password"></ion-input>
+        <ion-input class="my-input-class"  type="password" placeholder="Password" formControlName="password"></ion-input>
       </ion-item>
+
       <div *ngIf="(password.dirty || password.touched) && password.errors" class="errors">
         <span *ngIf="password.errors?.required">Password is required</span>
         <span *ngIf="password.errors?.minlength">Password needs to be 6 characters</span>
       </div>
+      <a [routerLink]="['/tabs']" id="forget" fill="clear"> <span>Forgot your password?</span></a>
+
+    <ion-button class="my-submit-bt" type="submit" [disabled]="!credentials.valid">Sign in</ion-button>
+
+    <div id="sigin-btns">
+      <ion-button type="button" expand="block" class="sign-in" >
+        <img src="https://img.icons8.com/color/27/000000/google-logo.png" class="google-img"/>
+        Sign in with Google
+      </ion-button>
+      <ion-button type="button" expand="block" class="sign-in-fb">
+        <img src="https://img.icons8.com/color/35/000000/facebook-new.png"/>
+        Sign in with Facebook
+      </ion-button>
     </div>
-
-    <ion-button type="submit" expand="block" [disabled]="!credentials.valid">Log in</ion-button>
-    <ion-button type="button" expand="block" color="light" fill="clear">Not yet a member? Sign up!
-    </ion-button>
-
-    <ion-button type="button" expand="block" color="tertiary">
-      <ion-icon name="logo-google" slot="start"></ion-icon>
-      Sign in with Google
-    </ion-button>
-    <ion-button type="button" expand="block" color="tertiary">
-      <ion-icon name="logo-apple" slot="start"></ion-icon>
-      Sign in with Apple
-    </ion-button>
   </form>
 </ion-content>
+<ion-footer class="ion-no-border">
+  <ion-button id="register" type="button" expand="block" color="dark" fill="clear" [routerLink]="['register']">Not yet a member? Sign up!
+  </ion-button>
+</ion-footer>
