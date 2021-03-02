@@ -1,0 +1,65 @@
+.field{
+    color: black;
+    border: 2px solid #000000;
+    width: 90%;
+    height: 52px;
+    margin: 20px  auto;
+    margin-top: 20px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    --padding-start:10px ;
+}
+.idplayer{
+    color: black;
+    border: 2px solid #000000;
+    width: 90%;
+    height: 52px;
+    margin-left: 14px;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    --padding-start:10px ;
+}
+
+#container{
+    margin-top: 50px;
+}
+.remove{
+    color: black;
+    border: 2px solid #000000;
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
+    --padding-start:10px ;
+}
+
+#signup{
+    --background: black;
+    color: white;
+    --border-radius: 7px;
+    border-radius: 9px;
+    border: 2px solid #000000 !important;
+    width: 90%;
+    height: 52px;
+    margin: 20px  auto;
+    margin-top: 20px;
+    font-size: 15px;
+    display: table;
+    margin: 0 auto;
+}
+
+#start{
+    --background: #2ECC71;
+    color: white;
+    --border-radius: 7px;
+    border-radius: 9px;
+    border: 2px solid #000000 !important;
+    width: 90%;
+    height: 52px;
+    margin: 20px  auto;
+    font-size: 15px;
+    display: table;
+    margin-bottom: 40px;
+}
+
+.container {
+    padding: 2rem 0rem;
+  }

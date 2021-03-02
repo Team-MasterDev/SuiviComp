@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RunningPage implements OnInit {
 
+  title = 'Create Running Course';
   constructor() { }
 
   ngOnInit() {

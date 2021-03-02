@@ -8,6 +8,8 @@ import { RunningPageRoutingModule } from './running-routing.module';
 
 import { RunningPage } from './running.page';
 
+import { HeaderComponent } from '../../components/header/header.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,12 @@ import { RunningPage } from './running.page';
     IonicModule,
     RunningPageRoutingModule
   ],
-  declarations: [RunningPage]
+  declarations: [
+    RunningPage,
+    HeaderComponent
+  ]
 })
+
+
+
 export class RunningPageModule {}
