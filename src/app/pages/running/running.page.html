@@ -3,58 +3,54 @@
 
 <ion-content class="card-background-page">
   <div id="container">
-    <ion-input class="field" placeholder="Course title"></ion-input>
-    <ion-input class="field" placeholder="Course description"></ion-input>
-      <ion-row>
-        <ion-col size="8">
-          <ion-input class="idplayer " placeholder="Id Player"></ion-input>
-        </ion-col>
-        <ion-col size="4">
-          <ion-button id="signup">Add</ion-button>
-        </ion-col>
-      </ion-row>
+    <form [formGroup]="myform" (ngSubmit)="createCourse()">
+      <!-- Alerts for notifications -->
+      <div class="alert alert-success" [hidden]="!isCreated">
+        <div class="alert-container">
+          <div class="alert-icon">
+            <i class="fa fa-check"></i>
+          </div>
+          <button (click)="deleteSuccessAlert()" type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
+            <span>clear</span>
+          </button>
+          <b class="alert-info">Success alert:</b> Badge Affected  sucessfully
+        </div>
+      </div>
+      <div class="alert alert-danger" [hidden]="!isError">
+        <div class="alert-container">
+          <div class="alert-icon">
+            <i class="fa fa-info-circle"></i>
+          </div>
+          <button (click)="deleteErrorAlert()" type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
+            <span>clear</span>
+          </button>
+          <b class="alert-info">Error alert:</b> Badge not Affected try again
+        </div>
+      </div>
+      <!-- Alerts for notifications -->
+      <ion-input class="field" placeholder="Course title" formControlName="courseTitle"></ion-input>
+      <ion-input class="field" placeholder="Course description" formControlName="courseDisc"></ion-input>
+        <ion-row>
+          <ion-col size="8">
+            <ion-input class="idplayer" placeholder="Id Player" formControlName="players_Ids"></ion-input>
+          </ion-col>
+          <ion-col size="4">
+            <ion-button id="signup" (click)="addPlayer()">Add</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-button  id="start" type="submit" [routerLink]="['/tabs/home/running-started']" >Start</ion-button>
+    </form>
   </div>
 
-  <ion-button  id="start">Start</ion-button>
-
-    <ion-list class ="liste">
+    <ion-list class ="liste" *ngFor="let player of listPlayers">
       <ion-item>
-        <ion-label>Pokémon Yellow</ion-label>
-        <button class="remove"  ion-button color="danger" icon-start>
-          <ion-icon name='close'></ion-icon>
-          Remove
-        </button>
-      </ion-item>
-      <ion-item>
-        <ion-label>Mega Man X</ion-label>
-        <button class="remove"  ion-button color="danger" icon-start>
-          <ion-icon name='close'></ion-icon>
-          Remove
-        </button>
-      </ion-item>
-      <ion-item>
-        <ion-label>The Legend of Zelda</ion-label>
-        <button class="remove"  ion-button color="danger" icon-start>
-          <ion-icon name='close'></ion-icon>
-          Remove
-        </button>
-      </ion-item>
-      <ion-item>
-        <ion-label>Pac-Man</ion-label>
-        <button class="remove"  ion-button color="danger" icon-start>
-          <ion-icon name='close'></ion-icon>
-          Remove
-        </button>
-      </ion-item>
-      <ion-item>
-        <ion-label>Super Mario World</ion-label>
-        <button class="remove"  ion-button color="danger" icon-start>
+        <ion-label>{{ player.player_id }}</ion-label>
+        <button class="remove"  ion-button color="danger" (click)="deletePlayer( player.player_id )" icon-start>
           <ion-icon name='close'></ion-icon>
           Remove
         </button>
       </ion-item>
     </ion-list>
 
-<ion-content>
 
 </ion-content>

@@ -1,25 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
 import { RunningPageRoutingModule } from './running-routing.module';
 
 import { RunningPage } from './running.page';
+import {SharedModule} from '../../sharedModule/shared.module';
 
-import { HeaderComponent } from '../../components/header/header.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    RunningPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        RunningPageRoutingModule,
+        SharedModule,
+        ReactiveFormsModule
+    ],
   declarations: [
-    RunningPage,
-    HeaderComponent
+    RunningPage
   ]
 })
 

@@ -1,0 +1,16 @@
+ion-button {
+  display: table;
+  width: 60%;
+  margin: 0px auto;
+  --background	: #FFFFFF;
+  color: var(--my-blue-color);
+}
+ion-content {
+  --padding-start: 10px;
+  --padding-end: 10px;
+  --background	:  #eff5fb;
+  text-align: center;
+  text-align: justify;
+}
+
+

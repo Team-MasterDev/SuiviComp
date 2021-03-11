@@ -26,6 +26,10 @@ const routes: Routes = [
             path: 'running',
             loadChildren: () => import('../pages/running/running.module').then(m => m.RunningPageModule)
           },
+          {
+            path: 'running-started',
+            loadChildren: () => import('../pages/running-started/running-started.module').then( m => m.RunningStartedPageModule)
+          },
           {// To navigate to nested Components take a look in the ionic documentation.
             path: 'swimming',
             loadChildren: () => import('../pages/swimming/swimming.module').then(m => m.SwimmingPageModule)

@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -18,6 +19,7 @@ import {SharedModule} from '../../sharedModule/shared.module';
     IonicModule,
     PlayersPageRoutingModule,
     ReactiveFormsModule,
+    HttpClientModule,
     SharedModule// it's necessaray to declaire the new component in your main component by a shared component
   ],
   declarations: [

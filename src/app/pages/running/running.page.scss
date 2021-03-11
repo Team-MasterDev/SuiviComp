@@ -24,19 +24,22 @@
     margin-top: 50px;
 }
 .remove{
-    color: black;
-    border: 2px solid #000000;
+  background-color: #d9534f;
+    color: white;
+    border: 2px solid white;
     font-size: 17px;
     font-family: 'Roboto', sans-serif;
     --padding-start:10px ;
+  --border-radius: 7px;
+  border-radius: 9px;
 }
 
 #signup{
-    --background: black;
+    --background: #5bc0de;
     color: white;
     --border-radius: 7px;
     border-radius: 9px;
-    border: 2px solid #000000 !important;
+    //border: 2px solid #000000 !important;
     width: 90%;
     height: 52px;
     margin: 20px  auto;
@@ -47,11 +50,11 @@
 }
 
 #start{
-    --background: #2ECC71;
+    --background: var(--my-blue-color);
     color: white;
     --border-radius: 7px;
     border-radius: 9px;
-    border: 2px solid #000000 !important;
+    //border: 2px solid #000000 !important;
     width: 90%;
     height: 52px;
     margin: 20px  auto;

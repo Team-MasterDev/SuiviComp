@@ -2,8 +2,33 @@
 <ion-content>
   <div class="container">
     <div id="player-form">
-      <form [formGroup]="myform" (ngSubmit)="logForm()">
-          <!-- Player ID -->
+      <form [formGroup]="myform" (ngSubmit)="createPost()">
+        <!-- Alerts for notifications -->
+        <div class="alert alert-success" [hidden]="!isCreated">
+          <div class="alert-container">
+            <div class="alert-icon">
+              <i class="fa fa-check"></i>
+            </div>
+            <button (click)="deleteSuccessAlert()" type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
+              <span>clear</span>
+            </button>
+            <b class="alert-info">Success alert:</b> Badge Affected sucessfully
+          </div>
+        </div>
+        <div class="alert alert-danger" [hidden]="!isError">
+          <div class="alert-container">
+            <div class="alert-icon">
+              <i class="fa fa-info-circle"></i>
+            </div>
+            <button (click)="deleteErrorAlert()" type="button" class="close-icon" data-dismiss="alert" aria-label="Close">
+              <span>clear</span>
+            </button>
+            <b class="alert-info">Error alert:</b> Badge not Affected try again
+          </div>
+        </div>
+        <!-- Alerts for notifications -->
+
+        <!-- Player ID -->
           <ion-input class="my-input-class" type="text" formControlName="playerId" placeholder="Player ID"></ion-input>
           <!-- Error messages -->
           <span class="error ion-padding-horizontal" *ngIf="isSubmitted && errorControl.playerId.errors?.required">
