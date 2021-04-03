@@ -13,15 +13,15 @@ This application is purely developed by Ionic Framework and Angular.
 ## Demo
 
 <div>
-<img src="app_images/login.jpg" width="270">
-<img src="app_images/home.png" width="270">
-<img src="app_images/profil.png" width="270">
+<img src="app_images/login.jpg" width="270" height="500">
+<img src="app_images/home.png" width="270" height="500">
+<img src="app_images/profil.png" width="270" height="500">
 </div>
 
 <div>
-<img src="app_images/changeEmail.jpg" width="270">
-<img src="app_images/changePassword.png" width="270">
-<img src="app_images/explore.png" width="270">
+<img src="app_images/changeEmail.png" width="270" height="500">
+<img src="app_images/changePassword.png" width="270" height="500">
+<img src="app_images/explore.png" width="270" height="500">
 </div>
 
 ## Getting Started
